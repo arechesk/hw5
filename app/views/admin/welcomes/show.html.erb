@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @admin_welcome %>
+
+<div>
+  <%= link_to "Edit this welcome", edit_admin_welcome_path(@admin_welcome) %> |
+  <%= link_to "Back to welcomes", admin_welcomes_path %>
+
+  <%= button_to "Destroy this welcome", @admin_welcome, method: :delete %>
+</div>
